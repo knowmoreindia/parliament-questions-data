@@ -1,0 +1,395 @@
+{
+  "name": "parliament-questions",
+  "title": "Lok Sabha questions",
+  "homepage": "https://github.com/knowmoreindia/parliament-questions-data",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Digital Sansad: Lok Sabha questions and answers",
+      "path": "https://sansad.in/ls/questions/questions-and-answers"
+    },
+    {
+      "title": "Digital Sansad: Lok Sabha members",
+      "path": "https://sansad.in/ls/members"
+    }
+  ],
+  "version": "2026-11-24",
+  "resources": [
+    {
+      "name": "questions",
+      "path": [
+        "data/questions/ls14.csv",
+        "data/questions/ls15.csv",
+        "data/questions/ls16.csv",
+        "data/questions/ls17.csv",
+        "data/questions/ls18.csv"
+      ],
+      "format": "csv",
+      "description": "One row per question",
+      "schema": {
+        "fields": [
+          {
+            "name": "lok_sabha",
+            "type": "integer",
+            "description": "Lok Sabha, such as 17"
+          },
+          {
+            "name": "session",
+            "type": "integer",
+            "description": "Session of that Lok Sabha"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "STARRED (answered orally in the House) or UNSTARRED (answered in writing)"
+          },
+          {
+            "name": "question_no",
+            "type": "integer",
+            "description": "Question number. Starred and unstarred questions are numbered separately within a session"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Date the question was answered"
+          },
+          {
+            "name": "ministry",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Ministry that answered"
+          },
+          {
+            "name": "subject",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Subject, as published"
+          },
+          {
+            "name": "members",
+            "type": "string",
+            "description": "Members who asked, names as published, separated by '; '"
+          },
+          {
+            "name": "pdf_url",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer, PDF"
+          },
+          {
+            "name": "pdf_url_hindi",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer in Hindi, PDF"
+          },
+          {
+            "name": "doc_url",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer, Word file"
+          },
+          {
+            "name": "doc_url_hindi",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer in Hindi, Word file"
+          }
+        ]
+      }
+    },
+    {
+      "name": "members-ls18",
+      "path": "data/members_ls18.csv",
+      "format": "csv",
+      "description": "Members of the 18th Lok Sabha",
+      "schema": {
+        "fields": [
+          {
+            "name": "member_no",
+            "type": "integer",
+            "description": "Member number on Digital Sansad"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Name"
+          },
+          {
+            "name": "sort_name",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Name as sorted, surname first, with title"
+          },
+          {
+            "name": "title",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Title, such as Shri or Smt."
+          },
+          {
+            "name": "first_name",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "First name"
+          },
+          {
+            "name": "last_name",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Last name"
+          },
+          {
+            "name": "gender",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Gender"
+          },
+          {
+            "name": "party",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Party"
+          },
+          {
+            "name": "party_short",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Party, short name"
+          },
+          {
+            "name": "state_slug",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "State or UT slug"
+          },
+          {
+            "name": "state",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "State or UT"
+          },
+          {
+            "name": "constituency",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Constituency"
+          },
+          {
+            "name": "terms",
+            "type": "integer",
+            "description": "Number of terms in the Lok Sabha"
+          },
+          {
+            "name": "status",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Sitting, or how the seat was left"
+          },
+          {
+            "name": "lok_sabhas",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Lok Sabhas the member has served in"
+          },
+          {
+            "name": "qualification",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Highest education"
+          },
+          {
+            "name": "profession",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Profession"
+          },
+          {
+            "name": "other_professions",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Other professions"
+          },
+          {
+            "name": "date_of_birth",
+            "type": "date",
+            "description": "Date of birth"
+          },
+          {
+            "name": "image_url",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Photo on Digital Sansad"
+          }
+        ]
+      }
+    },
+    {
+      "name": "questions-text",
+      "path": [
+        "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls14.csv.gz",
+        "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls15.csv.gz",
+        "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls16.csv.gz",
+        "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls17.csv.gz"
+      ],
+      "format": "csv",
+      "compression": "gz",
+      "description": "Every question with its full question and answer text",
+      "schema": {
+        "fields": [
+          {
+            "name": "lok_sabha",
+            "type": "integer",
+            "description": "Lok Sabha, such as 17"
+          },
+          {
+            "name": "session",
+            "type": "integer",
+            "description": "Session of that Lok Sabha"
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "description": "STARRED (answered orally in the House) or UNSTARRED (answered in writing)"
+          },
+          {
+            "name": "question_no",
+            "type": "integer",
+            "description": "Question number. Starred and unstarred questions are numbered separately within a session"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Date the question was answered"
+          },
+          {
+            "name": "ministry",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Ministry that answered"
+          },
+          {
+            "name": "subject",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Subject, as published"
+          },
+          {
+            "name": "members",
+            "type": "string",
+            "description": "Members who asked, names as published, separated by '; '"
+          },
+          {
+            "name": "pdf_url",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer, PDF"
+          },
+          {
+            "name": "pdf_url_hindi",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer in Hindi, PDF"
+          },
+          {
+            "name": "doc_url",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer, Word file"
+          },
+          {
+            "name": "doc_url_hindi",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question and answer in Hindi, Word file"
+          },
+          {
+            "name": "question_text",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Question text, as published (with the site's HTML line breaks). Empty from the 18th Lok Sabha, where the text is only in the linked files"
+          },
+          {
+            "name": "answer_text",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Answer text, as published. Empty from the 18th Lok Sabha"
+          },
+          {
+            "name": "answer_text_hindi",
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Answer text in Hindi, where published"
+          }
+        ]
+      }
+    }
+  ]
+}

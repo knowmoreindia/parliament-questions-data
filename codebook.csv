@@ -1,0 +1,48 @@
+file,column,type,description
+data/questions/ls<NN>.csv,lok_sabha,integer,"Lok Sabha, such as 17"
+data/questions/ls<NN>.csv,session,integer,Session of that Lok Sabha
+data/questions/ls<NN>.csv,type,string,STARRED (answered orally in the House) or UNSTARRED (answered in writing)
+data/questions/ls<NN>.csv,question_no,integer,Question number. Starred and unstarred questions are numbered separately within a session
+data/questions/ls<NN>.csv,date,date,Date the question was answered
+data/questions/ls<NN>.csv,ministry,"string,null",Ministry that answered
+data/questions/ls<NN>.csv,subject,"string,null","Subject, as published"
+data/questions/ls<NN>.csv,members,string,"Members who asked, names as published, separated by '; '"
+data/questions/ls<NN>.csv,pdf_url,"string,null","Question and answer, PDF"
+data/questions/ls<NN>.csv,pdf_url_hindi,"string,null","Question and answer in Hindi, PDF"
+data/questions/ls<NN>.csv,doc_url,"string,null","Question and answer, Word file"
+data/questions/ls<NN>.csv,doc_url_hindi,"string,null","Question and answer in Hindi, Word file"
+data/members_ls18.csv,member_no,integer,Member number on Digital Sansad
+data/members_ls18.csv,name,string,Name
+data/members_ls18.csv,sort_name,"string,null","Name as sorted, surname first, with title"
+data/members_ls18.csv,title,"string,null","Title, such as Shri or Smt."
+data/members_ls18.csv,first_name,"string,null",First name
+data/members_ls18.csv,last_name,"string,null",Last name
+data/members_ls18.csv,gender,"string,null",Gender
+data/members_ls18.csv,party,"string,null",Party
+data/members_ls18.csv,party_short,"string,null","Party, short name"
+data/members_ls18.csv,state_slug,"string,null",State or UT slug
+data/members_ls18.csv,state,"string,null",State or UT
+data/members_ls18.csv,constituency,"string,null",Constituency
+data/members_ls18.csv,terms,integer,Number of terms in the Lok Sabha
+data/members_ls18.csv,status,"string,null","Sitting, or how the seat was left"
+data/members_ls18.csv,lok_sabhas,"string,null",Lok Sabhas the member has served in
+data/members_ls18.csv,qualification,"string,null",Highest education
+data/members_ls18.csv,profession,"string,null",Profession
+data/members_ls18.csv,other_professions,"string,null",Other professions
+data/members_ls18.csv,date_of_birth,date,Date of birth
+data/members_ls18.csv,image_url,"string,null",Photo on Digital Sansad
+release: questions-ls<NN>.csv.gz,lok_sabha,integer,"Lok Sabha, such as 17"
+release: questions-ls<NN>.csv.gz,session,integer,Session of that Lok Sabha
+release: questions-ls<NN>.csv.gz,type,string,STARRED (answered orally in the House) or UNSTARRED (answered in writing)
+release: questions-ls<NN>.csv.gz,question_no,integer,Question number. Starred and unstarred questions are numbered separately within a session
+release: questions-ls<NN>.csv.gz,date,date,Date the question was answered
+release: questions-ls<NN>.csv.gz,ministry,"string,null",Ministry that answered
+release: questions-ls<NN>.csv.gz,subject,"string,null","Subject, as published"
+release: questions-ls<NN>.csv.gz,members,string,"Members who asked, names as published, separated by '; '"
+release: questions-ls<NN>.csv.gz,pdf_url,"string,null","Question and answer, PDF"
+release: questions-ls<NN>.csv.gz,pdf_url_hindi,"string,null","Question and answer in Hindi, PDF"
+release: questions-ls<NN>.csv.gz,doc_url,"string,null","Question and answer, Word file"
+release: questions-ls<NN>.csv.gz,doc_url_hindi,"string,null","Question and answer in Hindi, Word file"
+release: questions-ls<NN>.csv.gz,question_text,"string,null","Question text, as published (with the site's HTML line breaks). Empty from the 18th Lok Sabha, where the text is only in the linked files"
+release: questions-ls<NN>.csv.gz,answer_text,"string,null","Answer text, as published. Empty from the 18th Lok Sabha"
+release: questions-ls<NN>.csv.gz,answer_text_hindi,"string,null","Answer text in Hindi, where published"
