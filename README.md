@@ -4,6 +4,14 @@ Every question MPs asked ministers in the Lok Sabha from 2004 to 2026: who asked
 
 3,12,013 questions.
 
+## At a glance
+
+| Table | Rows | Period | Where |
+| --- | ---: | --- | --- |
+| questions | 3,12,020 | 2004-07-05 to 2026-08-12 | `data/questions/` (5 files) |
+| members-ls18 | 545 |  | `data/members_ls18.csv` |
+| questions-text | 2,77,293 |  | release |
+
 ## Files
 
 | Path | |
@@ -37,6 +45,20 @@ questions.groupby("ministry").size().sort_values(ascending=False).head(10)
 
 - A question asked jointly lists every member in `members`. Names are as Digital Sansad prints them, so the same MP can be spelt differently across years.
 - Starred and unstarred questions are numbered separately, so a question is identified by Lok Sabha, session, type and number. A handful of questions appear twice, as published.
+
+## How to cite
+
+Know More India, *Lok Sabha questions*, version 2026-11-24, https://github.com/knowmoreindia/parliament-questions-data. Licensed CC BY 4.0.
+
+```bibtex
+@misc{knowmoreindia_parliament_questions,
+  author = {{Know More India}},
+  title = {Lok Sabha questions},
+  year = {2026},
+  version = {2026-11-24},
+  howpublished = {\url{https://github.com/knowmoreindia/parliament-questions-data}}
+}
+```
 
 ## Licence
 
