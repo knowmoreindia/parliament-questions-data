@@ -48,14 +48,14 @@ questions.groupby("ministry").size().sort_values(ascending=False).head(10)
 
 ## How to cite
 
-Know More India, *Lok Sabha questions*, version 2026-11-24, https://github.com/knowmoreindia/parliament-questions-data. Licensed CC BY 4.0.
+Know More India, *Lok Sabha questions*, version 2026-11-25, https://github.com/knowmoreindia/parliament-questions-data. Licensed CC BY 4.0.
 
 ```bibtex
 @misc{knowmoreindia_parliament_questions,
   author = {{Know More India}},
   title = {Lok Sabha questions},
   year = {2026},
-  version = {2026-11-24},
+  version = {2026-11-25},
   howpublished = {\url{https://github.com/knowmoreindia/parliament-questions-data}}
 }
 ```
