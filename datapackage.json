@@ -19,11 +19,12 @@
       "path": "https://sansad.in/ls/members"
     }
   ],
-  "version": "2026-11-25",
+  "version": "2026-11-26",
   "resources": [
     {
       "name": "questions",
       "path": [
+        "data/questions/ls13.csv",
         "data/questions/ls14.csv",
         "data/questions/ls15.csv",
         "data/questions/ls16.csv",
@@ -276,6 +277,7 @@
     {
       "name": "questions-text",
       "path": [
+        "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls13.csv.gz",
         "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls14.csv.gz",
         "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls15.csv.gz",
         "https://github.com/knowmoreindia/parliament-questions-data/releases/latest/download/questions-ls16.csv.gz",

@@ -1,14 +1,14 @@
 # Lok Sabha questions
 
-Every question MPs asked ministers in the Lok Sabha from 2004 to 2026: who asked, which ministry answered, the subject, the date, and links to the full question and answer.
+Every question MPs asked ministers in the Lok Sabha from 1999 to 2026: who asked, which ministry answered, the subject, the date, and links to the full question and answer.
 
-3,12,013 questions.
+3,93,513 questions.
 
 ## At a glance
 
 | Table | Rows | Period | Where |
 | --- | ---: | --- | --- |
-| questions | 3,12,020 | 2004-07-05 to 2026-08-12 | `data/questions/` (5 files) |
+| questions | 3,93,520 | 1999-11-29 to 2026-08-12 | `data/questions/` (6 files) |
 | members-ls18 | 545 |  | `data/members_ls18.csv` |
 | questions-text | 2,77,293 |  | release |
 
@@ -21,8 +21,9 @@ Every question MPs asked ministers in the Lok Sabha from 2004 to 2026: who asked
 
 | Lok Sabha | Years | Questions |
 |---|---|---|
+| 13 | 1999 to 2004 | 73,324 |
 | 14 | 2004 to 2009 | 66,371 |
-| 15 | 2009 to 2014 | 71,224 |
+| 15 | 2009 to 2014 | 79,400 |
 | 16 | 2014 to 2019 | 79,149 |
 | 17 | 2019 to 2024 | 60,549 |
 | 18 | 2024 to 2026 | 34,720 |
@@ -48,14 +49,14 @@ questions.groupby("ministry").size().sort_values(ascending=False).head(10)
 
 ## How to cite
 
-Know More India, *Lok Sabha questions*, version 2026-11-25, https://github.com/knowmoreindia/parliament-questions-data. Licensed CC BY 4.0.
+Know More India, *Lok Sabha questions*, version 2026-11-26, https://github.com/knowmoreindia/parliament-questions-data. Licensed CC BY 4.0.
 
 ```bibtex
 @misc{knowmoreindia_parliament_questions,
   author = {{Know More India}},
   title = {Lok Sabha questions},
   year = {2026},
-  version = {2026-11-25},
+  version = {2026-11-26},
   howpublished = {\url{https://github.com/knowmoreindia/parliament-questions-data}}
 }
 ```
